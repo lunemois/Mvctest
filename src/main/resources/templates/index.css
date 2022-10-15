@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(bg1.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    /* background-color: aliceblue; */
+
+}
+body::before {
+    content: "";
+    position: absolute; z-index: 1;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login-page {
+    position: relative; z-index: 2;
+}
+
+.login-page h1 {
+    font-size: 32px; color: #fff;
+    text-align: center;
+}
+.int-area{
+    width: 400px;
+    position: relative;
+}
+.int-area input {
+    width: 100%;
+    padding: 20px 10px 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+    font-size: 18px; color: #fff;
+    outline: none;
+}
+.int-area label {
+    position: absolute; left: 10px; top: 10px;
+    font-size: 18px; color: #999;
+}
+.int-area input :focus + label,
+.int-area input :valid + label {
+    top: 0;
+}
+
+.button-area {
+    margin-top: 5px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+.button-area button {
+    width: 130px;
+    height: 40px;
+    border-radius: 25px;
+    font-style: initial;
+    background-color: rgb(206, 196, 190);
+}
+
+.caption {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.caption a {
+    font-size: 13px; color: rgb(211, 185, 170);
+    font-style: initial;
+
+}
+
+
