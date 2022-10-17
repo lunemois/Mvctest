@@ -18,7 +18,7 @@ public class LoginController {
     @PostMapping("/login")
     public String login(User user, Model model) {
         String result = loginService.login(user);
-        model.addAttribute(result);
+        model.addAttribute("name", result);
         return "login.html";
     }
 }
